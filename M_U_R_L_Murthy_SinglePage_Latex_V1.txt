@@ -1,0 +1,170 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[pastel]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+% Define the \simpleheader command
+\simpleheader{headercolour}{Uma Rama Linga Murthy}{Marthi}{Business Intelligence, Data Science Consultant}{white}
+\vspace{4em}
+% Additional information aligned with the header
+\begin{center}
+    \textcolor{white}{\faEnvelopeO~ram.marthi@gmail.com,}
+    \textcolor{white}{~\faMapMarker~Chennai, India, }
+    \textcolor{white}{\faPhone~+91 9000364152, }
+    \textcolor{white}{\faGithub~/RamMarthi9, }
+    \textcolor{white}{\faLinkedin~in/rmarthi-521057138}    
+\end{center}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushleft
+\begin{center}
+    \roundpic{RM1.jpg}
+\end{center}
+
+\bigskip
+
+\bg{cvgreen}{white}{About Me}\\[0.5em]
+
+{\small
+\setlength{\baselineskip}{1.0\baselineskip}
+As a seasoned cloud-based \textit{Data Scientist, BI Developer} with over a decade of experience, I have successfully built, deployed, and maintained over 50 dashboards and led numerous data science projects. My expertise spans across SQL, Python, R-Language, ML, DL, AI, NLP, CV, Qlik, PowerBI and Tableau. I am passionate about collaborating with industry-leading professionals and am particularly drawn to opportunities that involve addressing the most critical business challenges.\par
+}
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of Specialization} \\[0.5em]
+\small
+Statistical Data Analysis ~•~ ETL ~•~ Business Intelligence ~•~ Machine Learning ~•~ Deep Learning ~•~ Natural Language Processing (NLP) ~•~ Computer Vision ~•~ DevOps ~•~ MLOps ~•~ Data Pipelines ~•~ Scrum Master ~•~ Python ~•~ R-Language
+
+\bigskip
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+\small
+Nationality : India 
+
+Date Of Birth : 10/03/1987
+
+Place Of Birth : Hyderabad
+
+Languages: English, Hindi, Telugu, Tamil
+\bigskip
+
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Education}
+\begin{tabular}{r p{0.6\textwidth} c}
+\small    \cvdegree{2023}{Data Science and Engineering}{M.Tech.,}{BITS, Pilani \color{headerblue}}{}{bits.jpg} \\
+\small    \cvdegree{2010}{Finance and Marketing}{PGDM.,}{SSIM, Hyderabad \color{headerblue}}{}{SSIM.jpg} \\
+\small    \cvdegree{2008}{Mechanical Engineering}{B.Tech.,}{DMSSVHCE, Machilipatnam \color{headerblue}}{}{DMSSVH.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{.4\textwidth}
+\section*{Skills}
+\begin{tabular}{l @{\hspace{0.2em}}r}
+     \bg{cvgreen}{white}{Data Mining: Ansi-SQL,PL-SQL,T-SQl} \\
+    \bg{cvgreen}{white}{Programming Languages: Python, R-Language, LaTeX}  \\
+    \bg{cvgreen}{white}{Data Science: ML, DL, AI, NLP, CV} \\
+     \bg{cvgreen}{white}{Business Intelligence Tools: Qlik, Tableau, PowerBI} \\
+     \bg{cvgreen}{white}{AWS:S3,Athena,Sagemaker} \\
+    \bg{cvgreen}{white}{ETL Tools:Alteryx, QlikScripting, Pandas} \\
+    \bg{cvgreen}{white}{Deployment Tools: GitHub,Gitlab,VSCode} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Work Experience}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--Present}{CMA CGM GBS INDIA LTD}{Consultant Manager}{Chennai, India \color{cvred}}{Responsible to generate business use cases with application of Machine learning on global customer data base ~•~ Responsible to maintain Global Partner Data Management Dashboards and related dimensions ~•~ Lead Global CDM Analytics and data science initiatives managing a team of data analysts.}{download.png} \\
+    \cvevent{2018--2020}{LATENTVIEW ANALYTICS LTD}{Lead Data Analyst}{Chennai, India \color{cvred}}{Responsible to collect requirements, project planning, execution and delivery of analytics solutions to clients spread across Insurance and Auto industries.}{lv1.png} \\
+    \cvevent{2016--2018}{SCINTEL TECHNOLOGIES LTD}{Senior Business Analyst}{Chennai, India \color{cvred}}{Responsible to collect requirements, execution and delivery of Business Intelligence solutions to clients from Healthcare Industry.}{stl.jpg} \\
+    \cvevent{2012--2016}{GAFFNEY-KROESE SUPPLY INDIA PVT. LTD.}{Business Analyst}{Chennai, India \color{cvred}}{Responsible to maintain databases in SQL and prepare reports as per management needs.}{Gaffney-Kroese.png}
+    \\
+    \cvevent{2011--2012}{ZENITH ENERGY SERVICES PVT LTD.}{Assistant Manager-Renewable Energy}{Hyderabad, India \color{cvred}}{Responsible to conduct MNRE based policy study on biomass and baggasse cogeneration plants across India.}{ZESPL.jpg} \\
+    \cvevent{2010--2011}{NOVUS GREEN ENERGY SYSTEMS PVT LTD.}{Area Manager-Chattisgarh}{Raipur, India \color{cvred}}{Responsible for business development.}{NGES.jpg} \\
+\end{tabular}
+
+\section*{Vital Data Science Projects}
+\vspace{1em}
+\begin{itemize}
+\small   
+    \item \textbf{2024}: Investment Tracking PowerBI Dashboard 
+    \item \textbf{2024}: House Price Prediction with Machine Learning in Kaggle
+    \item \textbf{2023}: Bookings Prediction  with Deep Learning and Data Replication with GANs
+    \item \textbf{2023}: Customer Churn Prediction in Shipping Industry with Machine Learning
+    \item \textbf{2023}: Computer Vision based scene text extraction model to extract data for twitter data extraction.
+    \item \textbf{2022}: NLP Based AI Tool for penny stocks recommendations
+
+\end{itemize}
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small \icon{\faEnvelopeO} {cvgreen}{}ram.marthi@gmail.com \icon{\faMapMarker}{cvgreen}{} Chennai, India \icon{\faPhone}{cvgreen}{} +91 9000364152 \newline \icon {\faGithub}{cvgreen}{}/RamMarthi9
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
